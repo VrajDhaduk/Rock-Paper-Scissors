@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="Rock-Paper-Scissors.css">
+</head>
+<body>
+
+    <audio id="myAudio">
+        <source src="button_Sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <h1>Rock-Paper-Scissors</h1>
+    <div id="heading">
+        <h2>User</h2>
+        <h2>Vs</h2>
+        <h2>Computer</h2>
+    </div>
+    <div class="choices">
+        
+        <div class="user-choice">
+            <div class="choice" id="rock" onclick="playAudio()">
+                <img src="rock.png">
+            </div>
+            <div class="choice" id="paper" onclick="playAudio()">
+                <img src="paper.png">
+            </div>
+            <div class="choice" id="scissors" onclick="playAudio()">
+                <img src="scissors.png">
+            </div>
+        </div>
+       
+
+        <div class="score">
+            <div class="scoreBoard">
+                <div class="score">
+                    <p id="userScore">0</p>
+                    <p>You</p>
+                </div>
+    
+                <div class="score">
+                    <p id="ComputerScore">0</p>
+                    <p>Computer</p>
+                </div>
+            </div>
+    
+            <div class="msg-Container">
+                <p id="msg">Play your move</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="Comp-choice" id = "nvnonv">
+            <div class="c-choice" id="c_rock">
+                <img src="rock.png">
+            </div>
+            <div class="c-choice" id="c_paper">
+                <img src="paper.png">
+            </div>
+            <div class="c-choice" id="c_scissors">
+                <img src="scissors.png">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="Rock-Paper-Scissors.js"></script>
+</html>
